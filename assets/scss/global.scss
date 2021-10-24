@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-content {
+    @include media-breakpoint-up(lg) {
+        position: relative;
+    }
+}
+
+.container-lg {
+    @include media-breakpoint-down(lg) {
+        padding: 0;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        max-width: 1140px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    color: #000 !important;
+}

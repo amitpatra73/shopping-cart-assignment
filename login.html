@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="description" content="Log in & shop and buy online all your daily needs" />
+    <title>Sign In - Sabka Bazaar</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-lg">
+            <nav class="navbar" aria-label="Navigation Bar">
+                <div class="left-links col-6">
+                    <div class="logo col-md-5">
+                        <a href="index.html" class="navbar-brand" aria-label="Go to Homepage">
+                            <img src="/static/images/logo.png" srcset="
+                      /static/images/logo.png    1x,
+                      /static/images/logo_2x.png 2x
+                    " alt="Sabka Bazaar Logo" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="nav-links col-md-7 d-none d-md-block">
+                        <a href="index.html" aria-current="true" class="home-menu menu active">Home</a>
+                        <a href="#products" class="products-menu menu">Products</a>
+                    </div>
+                </div>
+                <div class="right-links col-6">
+                    <div class="utility-links d-none d-md-block">
+                        <a href="login.html">SignIn</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                    <div class="cart" aria-label="Shopping Cart" role="button" tabindex="0">
+                        <svg version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+                            style="enable-background:new 0 0 24 24;" xml:space="preserve" aria-hidden="true">
+                            <path
+                                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+                                fill="#c53535" />
+                        </svg>
+                        <span class="total-cart-items">0</span><span> items</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="login" class="container-lg">
+        <section class="login-section">
+            <form id="login-form" action="index.html">
+                <section class="form-description">
+                    <h1>Login</h1>
+                    <p>Get access to your orders, wishlist & recommendations.</p>
+                </section>
+                <section class="form-fields">
+                    <div class="input-group">
+                        <input type="email" id="email" class="form-control" name="email" aria-label="Email" required>
+                        <label class="form-label" for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" class="form-control" name="password" aria-label="Password" required>
+                        <label class="form-label" for="password">Password</label>
+                    </div>
+                    <button class="btn btn-login">Login</button>
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-lg">
+            <p class="copyright">Copyright 2011-2018 Sabka Bazaar Grocery Supplies Pvt. Ltd.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/login.bundle.js"></script>
+
+</body>
+
+</html>

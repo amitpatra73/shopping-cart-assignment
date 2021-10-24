@@ -1,0 +1,19 @@
+footer {
+    padding: .5rem;
+    background-color: #e9e9e9;
+
+    @include media-breakpoint-up(md) {
+        padding: 1rem;
+    }
+
+    .copyright {
+        margin: 0;
+        text-align: center;
+        font-size: 0.75rem;
+
+        @include media-breakpoint-up(lg) {
+            text-align: left;
+            font-size: 1rem;
+        }
+    }
+}

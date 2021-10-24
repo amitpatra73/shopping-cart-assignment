@@ -1,0 +1,94 @@
+.login-section, .register-section {
+    padding: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        padding: 4rem 4rem 2rem;
+    }    
+
+    #login-form, #register-form {
+        display: flex;
+        flex-direction: column;
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+        }
+
+        .form-description {
+
+            @include media-breakpoint-only(md) {
+                width: 50%;
+            }
+
+            h1 {
+                font-weight: bold;
+                margin-top: 1rem;
+            }
+        }
+
+        .form-fields {
+            width: 100%;
+
+            @include media-breakpoint-up(md) {
+                width: 45%;
+            }
+
+            .input-group {
+                flex-direction: column;
+                margin-bottom: 2rem;
+
+                .form-label {
+                    margin-bottom: 0;
+                    transition: all 0.2s ease;
+                    color: #a9a9a9;
+                    position: absolute;
+                    z-index: 4;
+                    bottom: 0.75rem;
+                }
+
+                .form-control {
+                    width: 100%;
+                    border: none;
+                    border-bottom: 2px solid #d9d9d9;
+                    padding: .75rem 0;
+                    border-radius: 0;
+                    outline: none;
+
+                    &:focus,
+                    &.active {
+
+                        +.form-label {
+                            font-size: 75%;
+                            color: #00d3ff;
+                            top: 0;
+                            z-index: 1;
+                            transform: translateY(-50%);
+                        }
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &.active {
+                        border-bottom: 2px solid #00d3ff;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .btn-login {
+                background-color: #e5016a;
+                width: 100%;
+                border-radius: 0;
+            }
+        }
+
+        .form-description,
+        .form-fields {
+            padding: 1rem;
+
+            @include media-breakpoint-up(lg) {
+                padding: 0 2rem;
+            }
+        }
+    }
+}
